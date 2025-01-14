@@ -5,11 +5,13 @@ import Wishlist from './pages/Wishlist'
 import Cart from './pages/Cart'
 import View from './pages/View'
 import PNF from './pages/PNF'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <>
+    
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/wishlist' element={<Wishlist/>} />
@@ -17,6 +19,7 @@ function App() {
         <Route path='/:id/view' element={<View/>} />
         <Route path='/*' element={<PNF/>} />
       </Routes>
+    <Footer/>
     </>
   )
 }
